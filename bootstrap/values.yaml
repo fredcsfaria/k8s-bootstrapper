@@ -5,7 +5,7 @@ storageClass: "do-block-storage"
 bots:
   enable: false
 guestbook:
-  enable: true
+  enable: false
 kyverno:
   enable: false  
 logging:
