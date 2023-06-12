@@ -5,7 +5,7 @@ storageClass: "do-block-storage"
 bots:
   enable: false
 guestbook:
-  enable: false
+  enable: true
 kyverno:
   enable: false  
 logging:
@@ -16,6 +16,6 @@ observability:
   storageSize: 50Gi
   retention: 5d
 traefik:
-  enable: true  
+  enable: false  
 trivy:
-  enable: true
+  enable: false
