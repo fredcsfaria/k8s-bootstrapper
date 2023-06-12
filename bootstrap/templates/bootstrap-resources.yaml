@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: bootstrap/bootstrap-resources
-    repoURL:https://github.com/fredcsfaria/k8s-bootstrapper
+    repoURL: https://github.com/fredcsfaria/k8s-bootstrapper
     targetRevision: HEAD
     helm:
       parameters:
