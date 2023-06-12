@@ -9,8 +9,8 @@ metadata:
 spec:
  project: default
  source:
-  repoURL: 'https://github.com/hivenetes/hive'
-  path: charts/guestbook
+  repoURL: 'https://github.com/argoproj/argocd-example-apps.git'
+  path: guestbook
   targetRevision: HEAD
   helm:
     valueFiles:
