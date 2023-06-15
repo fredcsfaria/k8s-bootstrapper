@@ -12,7 +12,7 @@ logging:
   enable: false
 observability:
   enable: false
-  pdkey:
+  pdkey: 123
   storageSize: 50Gi
   retention: 5d
 traefik:
