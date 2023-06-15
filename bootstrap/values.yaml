@@ -11,9 +11,9 @@ kyverno:
 logging:
   enable: false
 observability:
-  enable: false
+  enable: true
   pdkey: 123
-  storageSize: 50Gi
+  storageSize: 1Gi
   retention: 5d
 traefik:
   enable: false  
