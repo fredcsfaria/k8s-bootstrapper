@@ -13,6 +13,27 @@ spec:
     chart: ingress-nginx
     repoURL: https://kubernetes.github.io/ingress-nginx
     targetRevision: 4.7.1
+    helm:
+      ingress-nginx:
+        controller:
+          hostPort:
+            enabled: true
+          kind: DaemonSet
+          metrics:
+            enabled: true
+          publishService:
+            enabled: false
+          extraArgs:
+             default-ssl-certificate: "nginx/default-ssl-certificate"
+          service:
+            enabled: false
+          resources:
+            limits:
+              cpu: 100m
+              memory: 90Mi
+            requests:
+              cpu: 100m
+              memory: 90Mi
   syncPolicy:
     automated:
       prune: true
