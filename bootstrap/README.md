@@ -54,7 +54,7 @@ kubectl apply -f https://raw.githubusercontent.com/hivenetes/k8s-bootstrapper/ma
 Após bootstrap fazer um patch do ArgoCD ConfigMap para que ele permaneça em Sync ( https://nirmata.com/2023/03/09/3-essential-tips-for-using-argo-cd-and-kyverno/ ) :
 
 ```
-kubectl apply -f  Kyverno-argo-patch.yaml
+kubectl apply -f  Kyverno-argocd-patch.yaml -n argocd
 ```
 
 ### Access the ArgoCD Web UI
