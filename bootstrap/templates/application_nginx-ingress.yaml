@@ -1,4 +1,4 @@
-{{- if .Values.guestbook.enable }}
+{{- if .Values.nginx-ingress.enable }}
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
