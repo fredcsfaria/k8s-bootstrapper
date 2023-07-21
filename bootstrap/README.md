@@ -51,6 +51,11 @@ trivy:
 # Let the bootstrap begin!
 kubectl apply -f https://raw.githubusercontent.com/hivenetes/k8s-bootstrapper/main/bootstrap/bootstrap.yaml
 ```
+Após bootstrap fazer um patch do ArgoCD ConfigMap para que ele permaneça em Sync ( https://nirmata.com/2023/03/09/3-essential-tips-for-using-argo-cd-and-kyverno/ ) :
+
+```
+kubectl apply -f  Kyverno-argo-patch.yaml
+```
 
 ### Access the ArgoCD Web UI
 
