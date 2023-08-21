@@ -20,4 +20,4 @@ traefik:
 trivy:
   enable: false
 nginxingress:
-  enable: true
+  enable: false
