@@ -7,11 +7,11 @@ bots:
 guestbook:
   enable: false
 kyverno:
-  enable: true  
+  enable: false  
 logging:
   enable: false
 observability:
-  enable: true
+  enable: false
   pdkey: 123
   storageSize: 1Gi
   retention: 5d
