@@ -5,13 +5,13 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: argocd
+    namespace: nginx
     server: https://kubernetes.default.svc
   project: default
   source:
     path: bootstrap
     repoURL: https://github.com/fredcsfaria/k8s-bootstrapper
-    targetRevision: HEAD
+    targetRevision: teste-nginx
   syncPolicy:
     automated:
       selfHeal: true
