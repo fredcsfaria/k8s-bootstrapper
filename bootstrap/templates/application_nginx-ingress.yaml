@@ -16,6 +16,9 @@ spec:
     helm:
       ingress-nginx:
         controller:
+          containerPort:
+            http: 8088
+            https: 8089
           hostPort:
             enabled: true
           kind: DaemonSet
