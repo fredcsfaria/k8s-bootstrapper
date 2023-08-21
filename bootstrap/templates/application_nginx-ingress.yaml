@@ -28,7 +28,7 @@ spec:
           extraArgs:
              default-ssl-certificate: "nginx/default-ssl-certificate"
           service:
-            enabled: true
+            enabled: false
           resources:
             limits:
               cpu: 100m
