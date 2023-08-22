@@ -18,7 +18,12 @@ spec:
     targetRevision: main
     directory:
       recurse: true
-  syncPolicy:
-    automated: {}
- {{- end }}   
+   syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      - Replace=true
+  {{- end }}   
     
