@@ -21,3 +21,6 @@ trivy:
   enable: false
 nginxingress:
   enable: false
+policies:
+  enable: false
+  
