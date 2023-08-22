@@ -11,6 +11,11 @@ spec:
   destination:
     namespace: policies
     server: https://kubernetes.default.svc
+  ignoreDifferences:
+    - group: kyverno.io
+      kind: ClusterPolicy
+      jqPathExpressions:
+        - .spec.rules[] | select(.name|test("autogen-.")) 
   project: default
   source:
     path: policies
