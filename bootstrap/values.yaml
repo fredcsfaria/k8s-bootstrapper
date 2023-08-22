@@ -23,7 +23,6 @@ nginxingress:
   enable: false
 clustergrouppolicies:
   enable: true  
-policies:
-  enable: true
+ 
 
   
