@@ -21,8 +21,9 @@ trivy:
   enable: false
 nginxingress:
   enable: false
+clustergrouppolicies:
+  enable: true  
 policies:
   enable: true
-clustergrouppolicies
-   enable: true
+
   
