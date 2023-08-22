@@ -22,5 +22,5 @@ trivy:
 nginxingress:
   enable: false
 policies:
-  enable: false
+  enable: true
   
