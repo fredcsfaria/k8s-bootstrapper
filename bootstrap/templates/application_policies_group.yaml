@@ -11,6 +11,9 @@ spec:
     repoURL: https://kyverno.github.io/kyverno
     chart: kyverno-policies
     targetRevision: '*'
+    helm:
+      podSecurityStandard: "baseline"
+      validationFailureAction: "Audit"
   destination:
     server: https://kubernetes.default.svc
     namespace: policies
