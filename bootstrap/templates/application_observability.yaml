@@ -43,8 +43,8 @@ spec:
         prometheus:
           prometheusSpec:
             retention: {{ .Values.observability.retention }}
-            podMonitorSelectorNilUsesHelmValues: false
-            serviceMonitorSelectorNilUsesHelmValues: false
+            podMonitorSelectorNilUsesHelmValues: true
+            serviceMonitorSelectorNilUsesHelmValues: true
             #storageSpec:
              # volumeClaimTemplate:
              #   spec:
