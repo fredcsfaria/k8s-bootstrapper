@@ -26,10 +26,12 @@ spec:
           kind: DaemonSet
           metrics:
             enabled: true
+              serviceMonitor: true
+            serviceMonitor
           publishService:
             enabled: false
-          extraArgs:
-             default-ssl-certificate: "nginx/default-ssl-certificate"
+          # extraArgs:
+          #   default-ssl-certificate: "nginx/default-ssl-certificate"
           service:
             enabled: false
           resources:
