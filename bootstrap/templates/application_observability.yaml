@@ -31,15 +31,7 @@ spec:
             receivers:
               - name: default
                 pagerduty_configs:
-                - service_key: {{ .Values.observability.pdkey }}
-              - name: 'email'
-                email_configs:
-                - to: 'receiver_mail_id@gmail.com'
-                  from: 'nao-responda@cvm.gov.br'
-                  smarthost: mail.intranet.cvm
-                  # auth_username: 'mail_id@gmail.com'
-                  # auth_identity: 'mail_id@gmail.com'
-                  # auth_password: 'password'
+                - service_key: {{ .Values.observability.pdkey }}           
         prometheus:
           prometheusSpec:
             retention: {{ .Values.observability.retention }}
