@@ -37,15 +37,7 @@ spec:
             retention: {{ .Values.observability.retention }}
             podMonitorSelectorNilUsesHelmValues: true
             serviceMonitorSelectorNilUsesHelmValues: true
-            #storageSpec:
-             # volumeClaimTemplate:
-             #   spec:
-             #     storageClassName: {{ .Values.storageClass }}
-             #     accessModes: ["ReadWriteOnce"]
-             #     resources:
-             #       requests:
-             #         storage: {{ .Values.observability.storageSize }}
-             additionalScrapeConfigs:
+            additionalScrapeConfigs:
                - job_name: kubernetes-service-endpoints
                  kubernetes_sd_configs:
                  - role: service
