@@ -58,7 +58,6 @@ spec:
                  kubernetes_sd_configs:
                  - role: service
                  relabel_configs:
-
               # annotation 'prometheus.io/scrape' must be set to 'true'
                  - action: keep
                    regex: true
