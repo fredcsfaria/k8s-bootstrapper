@@ -22,7 +22,7 @@ spec:
             enabled: true
           kind: DaemonSet
           metrics:
-            enabled: true
+            enabled: false
           publishService:
             enabled: false
           extraArgs:
